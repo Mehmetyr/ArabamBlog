@@ -1,0 +1,6 @@
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\bin\Debug\DataAccessleyear.dll
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\bin\Debug\DataAccessleyear.pdb
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\obj\Debug\DataAccessleyear.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\obj\Debug\DataAccessleyear.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\obj\Debug\DataAccessleyear.dll
+C:\Users\acer\source\repos\Arabamblog\DataAccessleyear\obj\Debug\DataAccessleyear.pdb

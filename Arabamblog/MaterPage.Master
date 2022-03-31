@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MaterPage.master.cs" Inherits="Arabamblog.MaterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="assets/css/MainStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="Default.aspx">
+                        <img src="assets/Resimler/depositphotos_75266819-stock-illustration-car-silhouette-modern.jpg" />
+                        </a>
+                </div>
+                <div class="user">
+                   <asp:Panel ID="pnlGirisVar" runat="server">
+                   <asp:Label ID="lbl_uye" runat="server"></asp:Label> | <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click">Çıkış Yap</asp:LinkButton>
+                   </asp:Panel>
+                    <asp:Panel ID="pnl_girisyok" runat="server">
+                         <a href="UyeGirisi.aspx">Giriş Yap</a>|<a href="UyeOl.aspx">Kayıt Ol</a>
+                    </asp:Panel>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+             <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            <div class="menucontainer">
+                <ul>
+                    <a href='Default.aspx'><li>Tümü</li></a>
+                    <asp:Repeater ID="rp_markalar" runat="server">
+                        <ItemTemplate>
+                            <a href='Default.aspx?kid=<%# Eval("ID") %>'><li><%# Eval("Isim") %></li></a>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+                
+            </div>
+        </div>
+    </form>
+</body>
+</html>
